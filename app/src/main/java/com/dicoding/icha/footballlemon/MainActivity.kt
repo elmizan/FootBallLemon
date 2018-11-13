@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import android.widget.Toast
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 
@@ -33,8 +32,6 @@ class MainActivity : AppCompatActivity() {
         initClubData()
         recyclerViewClub.layoutManager = LinearLayoutManager(this)
         recyclerViewClub.adapter = FootBallLemonAdapter(listClub){
-            val toast = Toast.makeText(applicationContext, it.club_name, Toast.LENGTH_SHORT)
-            toast.show()
             startActivity<DetailActivity>(CLUB to it)
         }
     }
