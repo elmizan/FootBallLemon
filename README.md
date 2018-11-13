@@ -1,3 +1,3 @@
 # FootBallLemon
 first submission attempt for learn kotlin programming
-# FootBallLemon
+Lemon is a slank term for Layout n Common :(
